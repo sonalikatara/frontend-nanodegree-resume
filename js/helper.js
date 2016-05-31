@@ -40,7 +40,7 @@ var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<div class="row"><div class="col-sm-8"><a href="%link%">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '%data%</div>';
-var HTMLprojectImage = '<div class="col-sm-4"><div class="imageHolder"><img src="%data%" /><div class="caption"><br> %caption%.</div></div></div></div>';
+var HTMLprojectImage = '<div class="col-sm-4"><div class="imageHolder"><img class="projectImage" src="%data%" /><div class="caption"><br> %caption%.</div></div></div></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<div>%data%';
@@ -58,11 +58,11 @@ var HTMLonlineURL = '<a href="http://%link%">%data%</a>';
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
-var HTMLfooterContact ='<li class="list-group-item"><b>%contactFooterCategory% : </b>%data%</li>';
+var HTMLfooterContact = '<li class="list-group-item"><b>%contactFooterCategory% : </b>%data%</li>';
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
+
 $(document).ready(function() {
   $('button').click(function() {
     var $name = $('#name');
@@ -70,10 +70,10 @@ $(document).ready(function() {
     $name.html(iName);
   });
 });
-
+*/
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
-*/
+
 clickLocations = [];
 
 function logClicks(x,y) {
@@ -89,13 +89,14 @@ function logClicks(x,y) {
 $(document).click(function(loc) {
   // your code goes here!
 });
-
+*/
 /*
 This is the fun part. Here's where we generate the custom Google Map for the website.
 See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
-var map;    // declares a global map variable
+
+var map; // declares a global map variable
 
 /*
 Start here! initializeMap() is called when page is loaded.

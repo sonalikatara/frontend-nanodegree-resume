@@ -61,8 +61,8 @@ bio.display = function(){
 
 /* Education  */
 var education = {
-   "schools" : [
-    { "name" : "Banasthali University",
+   "schools" : [{
+      "name" : "Banasthali University",
       "location" : "Banasthali, India",
       "degree": "Masters",
       "majors" : ["Computer Applications"],
@@ -160,8 +160,7 @@ technicalSkills.display = function(){
 
 /* work */
 var work = {
-    "jobs" : [
-        {
+    "jobs" : [{
         "employer" : "MapMyVideo",
         "title"    : "Web Application Developer Consultant",
         "location" : "San Jose",
@@ -220,8 +219,7 @@ work.display = function(){
 
 /* Projects */
  var projects = {
-    "projects" :[
-        {
+    "projects" :[{
         "title" : "MapMyVideo",
         "dates" : "feb 2016 - April 2016",
         "description" : "Developing the website and User login and authentication system for the client’s web product. My work involves designing,developing and integrating the client’s web product to a website that helps manage user sessions and authenticate and manage user roles.",
