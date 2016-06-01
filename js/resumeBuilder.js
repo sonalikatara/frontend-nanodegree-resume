@@ -7,13 +7,13 @@ var bio = {
     "name" : "Sonali Lastname" ,
     "role" : "Web Developer",
     "contacts" : {
-        "mobile"  : "999-888-111",
+      //"mobile" : "000-000-0000",
         "email"   : "sonalikatara@gmail.com",
-        "github"  : "sonaligit",
-        "twitter"    : "#s_katara",
-        "location":  "San Fransisco"
+        "github"  : "github.com/sonalikatara",
+        "blog"    : "skatara.blogspot.com",
+        "location":  "San Francisco"
         },
-    "welcomeMessage" : "Welcome to my awsome Resume",
+    "welcomeMessage" : "Welcome to my awesome Resume",
     "skills" : ["HTML5" , "CSS3" , "JavaScript", "Ruby on Rails", "PHP", "mySQL", "jQuery", "JSON"],
     "biopic" : "images/fry.jpg"
     };
@@ -21,9 +21,9 @@ var bio = {
 bio.display = function(){
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-    var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
+   // var formattedMobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
     var formattedEmail =  HTMLemail.replace("%data%", bio.contacts.email);
-    var formattedTwitter = HTMLblog.replace("%data%", bio.contacts.twitter);
+    var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
     var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
     var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     var formattedPicture = HTMLbioPic.replace("%data%", bio.biopic);
@@ -35,9 +35,9 @@ bio.display = function(){
     $("#biopic").append(formattedPicture);
     $("#header").append(formattedWelcome);
 
-    $("#topContacts").append(formattedMobile);
+   // $("#topContacts").append(formattedMobile);
     $("#topContacts").append(formattedEmail);
-    $("#topContacts").append(formattedTwitter);
+    $("#topContacts").append(formattedBlog);
     $("#topContacts").append(formattedGitHub);
     $("#topContacts").append(formattedLocation);
 
@@ -74,7 +74,7 @@ var education = {
     {
       "title": "Front-end Developer Nano Degree",
       "school" : "Udacity",
-      "date" : "Feb 2016 - in progress",
+      "date" : "Feb. 2016 - in progress",
       "url" : "www.udacity.com"
     }
     ]
@@ -164,7 +164,7 @@ var work = {
         "employer" : "MapMyVideo",
         "title"    : "Web Application Developer Consultant",
         "location" : "San Jose",
-        "dates"    : "Feb 2016 - March 2016",
+        "dates"    : "Feb. 2016 - March 2016",
         "description" : "Developed the website and User login and authentication system for the client’s web product. My work involved designing,developing and integrating the client’s web product to a website that helps manage user sessions and authenticate and manage user roles."
         },
         {
@@ -179,7 +179,7 @@ var work = {
         "title"    : "Software Developer",
         "location": "Sunnyvale",
         "dates" :  " 2014 - 2015",
-        "description" : "Worked on a web product in Ruby on Rails, javascript, jQuery, AJAX  using Git source control and deployed it on Heroku."
+        "description" : "Worked on a web product in Ruby on Rails, JavaScript, jQuery, AJAX  using Git source control and deployed it on Heroku."
         },
         {
         "employer" : "NetworkEarth",
@@ -221,7 +221,7 @@ work.display = function(){
  var projects = {
     "projects" :[{
         "title" : "MapMyVideo",
-        "dates" : "feb 2016 - April 2016",
+        "dates" : "Feb. 2016 - April 2016",
         "description" : "Developing the website and User login and authentication system for the client’s web product. My work involves designing,developing and integrating the client’s web product to a website that helps manage user sessions and authenticate and manage user roles.",
         "images" : ["images/mapmyvideo.png"],
         "link"   : "",
@@ -241,15 +241,15 @@ work.display = function(){
         "description" : "AgencyLogic PowerSites are listing tool available for Real Estate professionals, every prospect receives a 100% unique Web address representing their specific property. ● Enhanced the administration and client site developed using ASP.net, C#, ADO.net and SQL Server 2000 ● Developing UI in ASP.Net using Web Forms.● Used ADO.NET, SQL provider, DataSets, DataList and DataRepeaters to establish database connectivity, data manipulation and display data.● Wrote the stored procedures in SQL Server involved in data base access.● Created libraries and user controls ● Performed image manipulation tasks.● Automated the process of registering domain names for the new powersites, now the sites get live within 2 hours of their creations.",
         "images" : ["images/powersite.PNG"],
         "link"   : "",
-        "caption": "javaScript, C#, HTML5, CSS"
+        "caption": "JavaScript, C#, HTML5, CSS"
         },
         {
         "title" : "Chamber Business Suite, NetworkEarth",
         "dates" : " 2004 - 2006",
         "description" : "Chamber Business Suite provides system integration services for the Chamber Business Suite. Features I worked on include the Event Calendar, member directory and registration system.● Developed web interfaces using ASP.net Web Forms, User Controls, and C#.● Developed and worked with APIs, Data Model, Data Entities and Data Adapters.● Created Views to extract data from sql server",
-        "images" : ["images/197x148.gif"],
+        "images" : [],
         "link"   : "#",
-        "caption": "javaScript, C#, HTML5, CSS"
+        "caption": "JavaScript, C#, HTML5, CSS"
         },
         {
         "title" : "SteamingBean (Retail Coffee), NetworkEarth",
@@ -257,7 +257,7 @@ work.display = function(){
         "description" : "Designed and developed the administrative site using ASP.net, C#, ADO.net and SQL Server 2000 www.thebean.com/components/administrationwebsite ● Overtook the project and was responsible for further enhancements ● Developing UI in ASP.Net using Web Forms.● Used ADO.NET, SQL provider, DataSets, DataList and DataRepeaters to establish database connectivity, data manipulation and display data.● Wrote the stored procedures in SQL Server involved in data base access.SerendipiTea (Retail Tea)www.serendipitea.com Using the common objects (by inheriting them) from the ecommerce project I worked on new site for tea. ",
         images : ["images/thebean.PNG"],
         "link"   : "http://www.thebean.com",
-        "caption": "javaScript, C#, HTML5, CSS"
+        "caption": "JavaScript, C#, HTML5, CSS"
         }
     ]
 };
